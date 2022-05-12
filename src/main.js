@@ -2,6 +2,7 @@ import Vuetify from "vuetify";
 import DefaultLayout from "~/layouts/Default.vue";
 
 import "vuetify/dist/vuetify.min.css";
+import '@mdi/font/css/materialdesignicons.css'
 
 import colors from "vuetify/lib/util/colors";
 
