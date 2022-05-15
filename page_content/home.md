@@ -1,5 +1,4 @@
 ---
-title: Fun
 thumbnail: /uploads/2.webp
 ---
 # Lapsa deos HELLO MOM
