@@ -1,3 +1,6 @@
+---
+thumbnail: /uploads/test.png
+---
 # Lapsa deos HELLO MOM
 
 ## Undis iuvenes dextra
