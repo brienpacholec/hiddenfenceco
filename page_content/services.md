@@ -1,3 +1,6 @@
+---
+thumbnail: /uploads/3.webp
+---
 # Adspicis indicat opus hostem
 
 ## Negabat pia aquarum Cnosiaco summam natos
