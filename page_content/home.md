@@ -1,5 +1,5 @@
 ---
-thumbnail: /uploads/test.png
+thumbnail: /uploads/3.webp
 ---
 # Lapsa deos HELLO MOM
 
