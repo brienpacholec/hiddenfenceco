@@ -1,3 +1,6 @@
+---
+thumbnail: /uploads/1.webp
+---
 # Ab proles refers
 
 ## Sis silva tenet
