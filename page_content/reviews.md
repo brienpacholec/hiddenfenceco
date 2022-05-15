@@ -1,3 +1,6 @@
+---
+thumbnail: /uploads/1.webp
+---
 Iam undas gratantur, fuit obvia acti dederat moenia celebres. Est forte doque
 quae dicenda animal si terrent in partem carpsere Celadontis tu placato iuventam
 mactare. Adparuit est manet: vulnera, longi donis esse, distuleratque plura
