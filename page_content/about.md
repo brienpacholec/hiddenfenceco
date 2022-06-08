@@ -13,4 +13,4 @@ Ryan graduated from Ithaca College in the Spring of 2019 with a bachelors of sci
 
 # **Our Product**
 
-![Product Listing](products.webp)
+![Product Listing](/uploads/products.webp)
