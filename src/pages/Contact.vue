@@ -2,6 +2,10 @@
   <Layout>
     <v-container>
       <h1>Contact Us</h1>
+      
+      <span v-html="this.$page.body.edges[0].node.content"></span>
+
+
       <p>Send a message, and we'll reply as soon as possible!</p>
 
       <v-form ref="form" v-model="valid" lazy-validation name="contact">
@@ -39,6 +43,19 @@
     </v-container>
   </Layout>
 </template>
+
+<page-query>
+  query pageContent{
+    body: allPageContent (filter: { fileInfo: {name : { eq: "contact" }}}){
+      edges {
+        node {
+          id
+          content
+        }
+      }
+    }
+  }
+</page-query>
 
 <script>
 export default {

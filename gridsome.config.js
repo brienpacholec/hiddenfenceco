@@ -6,6 +6,11 @@
 
 module.exports = {
   siteName: 'Hidden Fence Co.',
+  transformers: {
+    remark: {
+      plugins: ["@gridsome/remark-prismjs"]
+    }
+  },
   plugins: [
     {
       use: "@gridsome/source-filesystem",
@@ -17,7 +22,19 @@ module.exports = {
           externalLinksTarget: "_blank",
           externalLinksRel: ["nofollow", "noopener", "noreferrer"]
         }
-      }
+      },
+    },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: 'page_content/**/*.md',
+        typeName: 'PageContent',
+        resolveAbsolutePaths: false,
+        remark: {
+          externalLinksTarget: "_blank",
+          externalLinksRel: ["nofollow", "noopener", "noreferrer"]
+        }
+      },
     },
     {
       use: `gridsome-plugin-netlify-cms`,
@@ -26,10 +43,5 @@ module.exports = {
         modulePath: `src/admin/index.js`
       }
     },
-  ],
-  transformers: {
-    remark: {
-      plugins: ["@gridsome/remark-prismjs"]
-    }
-  }
+  ]
 }

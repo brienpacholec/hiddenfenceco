@@ -1,11 +1,10 @@
 <template>
   <nav>
     <v-toolbar
-      color="primary overflow-hidden"
+      color="light overflow-hidden"
       :elevate-on-scroll="true"
       :hide-on-scroll="false"
       dark
-      src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
       class="d-flex justify-center align-center fun"
       :height="100"
     >

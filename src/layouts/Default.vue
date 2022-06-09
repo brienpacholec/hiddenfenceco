@@ -3,7 +3,7 @@
     <Header />
     <Navbar />
     <Hero v-if="isHome" />
-    <v-container fill-height class="d-sm-none d-md-flex">
+    <v-container fill-height class="d-flex">
       <slot />
     </v-container>
     <Footer />

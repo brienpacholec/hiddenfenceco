@@ -1,5 +1,5 @@
 <template>
-  <v-parallax dark :src="heroData.hero.heroImgSrc">
+  <v-parallax dark :src="this.$static.image.edges[0].node.thumbnail">
     <v-row align="center" justify="center">
       <v-col/>
       <v-col>
@@ -11,6 +11,20 @@
     </v-row>
   </v-parallax>
 </template>
+
+<static-query>
+  query {
+    image: allPageContent (filter: { fileInfo: {name : { eq: "home" }}}){
+      edges {
+        node {
+          id
+          content
+          thumbnail
+        }
+      }
+    }
+  }
+</static-query>
 
 <script>
 import heroData from "~/data/hero.yml";
