@@ -1,17 +1,16 @@
 ---
 thumbnail: /uploads/3.webp
 ---
-# Adspicis indicat opus hostem
+# Training
 
-## Negabat pia aquarum Cnosiaco summam natos
+After we install your hidden fence we immediately jump into the training process. Our product is a pet containment system therefore we need teach your pet how the new fence works. We do this with a three step process. 
 
-Lorem markdownum belli *clauso Hyadasque* conubia paelex! Nec tota massa
-sororum, iamque color quae nuribus ut spectas [tabellis
-sinuavi](http://tonitrua.org/) Ichnobates multum, consequitur.
+1. The first step of training takes place right after we install your new fence. We take your pet around the new fence and teach them what the flags are and how to react when they get to them. While we do this we will also teach you how to further your pets training.
+2. After we leave it is vital that you continue the training with your pet. This will ensure that your pet has a good understanding of what to do when they are close to the hidden fence.
+3. Two or three days after installation we will come back to put your pet through another training. Once this training is complete we will evaluate if we need to come back again or not. If not then we encourage that you continue to train your pet until you fell comfortable with them off leash.
 
-1. Renovata potest laetos morte Thracesque tumet Hyperione
-2. Adamante vultu gravemque carcere
-3. Et mundus
-4. Cephisias tremor Thybridis ebur scelerataque cupidine dedit
-5. Animo temperiemque
-6. Scit laniare
+
+
+# Complete Training
+
+We also offer complete dog training. We understand that our customers have very busy schedules. That is why we offer complete training were we take all of the burden away from you. We will come and train your dog (usually four season) until he/she is trained and ready to run free in your yard.
