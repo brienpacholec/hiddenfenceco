@@ -122,13 +122,11 @@ export default {
 
 <style lang="scss">
 .hfc-about {
-  .html {
     img {
       width: 100%;
       max-width: 700px;
       height: auto;
     }
-  }
 
   .v-card {
     img {
