@@ -1,85 +1,87 @@
 <template>
-  <Layout>
-    <v-container>
-      <h1>Contact Us</h1>
+  <div class="contact">
+    <v-container fill-height class="d-flex">
+      <div>
+        <h1>Contact Us</h1>
 
-      <span v-html="this.$page.body.edges[0].node.content"></span>
+        <span v-html="this.$page.body.edges[0].node.content"></span>
 
-      <p>Send a message, and we'll reply as soon as possible!</p>
+        <p>Send a message, and we'll reply as soon as possible!</p>
 
-      <v-form
-        ref="form"
-        v-model="valid"
-        lazy-validation
-        name="Contact"
-        data-netlify="true"
-        method="POST"
-        v-on:submit.prevent="handleSubmit"
-      >
-        <v-text-field
-          v-model="formData.name"
-          name="name"
-          label="Name"
-          :rules="nameRules"
-          required
-          autocomplete
-        ></v-text-field>
-
-        <v-row>
-          <v-col
-            cols="12"
-            md="6"
-          >
-            <v-text-field
-              v-model="formData.email"
-              name="email"
-              label="Email"
-              :rules="emailRules"
-              required
-              autocomplete
-            ></v-text-field>
-          </v-col>
-
-          <v-col
-            cols="12"
-            md="6"
-          >
-            <v-text-field
-              v-model="formData.subject"
-              name="subject"
-              label="Subject"
-              :rules="subjectRules"
-              required
-              autocomplete
-            ></v-text-field>
-          </v-col>
-        </v-row>
-
-        <v-textarea
-          v-model="formData.message"
-          name="message"
-          label="Message"
-          rows="1"
-          row-height="15"
-          required
-        ></v-textarea>
-        <v-btn
-          color="success"
-          type="submit"
-          required
-          :disabled="!valid"
-          @click="validate"
+        <v-form
+          ref="form"
+          v-model="valid"
+          lazy-validation
+          name="Contact"
+          data-netlify="true"
+          method="POST"
+          v-on:submit.prevent="handleSubmit"
         >
-          Submit
-        </v-btn>
-      </v-form>
+          <v-text-field
+            v-model="formData.name"
+            name="name"
+            label="Name"
+            :rules="nameRules"
+            required
+            autocomplete
+          ></v-text-field>
+
+          <v-row>
+            <v-col
+              cols="12"
+              md="6"
+            >
+              <v-text-field
+                v-model="formData.email"
+                name="email"
+                label="Email"
+                :rules="emailRules"
+                required
+                autocomplete
+              ></v-text-field>
+            </v-col>
+
+            <v-col
+              cols="12"
+              md="6"
+            >
+              <v-text-field
+                v-model="formData.subject"
+                name="subject"
+                label="Subject"
+                :rules="subjectRules"
+                required
+                autocomplete
+              ></v-text-field>
+            </v-col>
+          </v-row>
+
+          <v-textarea
+            v-model="formData.message"
+            name="message"
+            label="Message"
+            rows="1"
+            row-height="15"
+            required
+          ></v-textarea>
+          <v-btn
+            color="success"
+            type="submit"
+            required
+            :disabled="!valid"
+            @click="validate"
+          >
+            Submit
+          </v-btn>
+        </v-form>
+      </div>
+      <v-snackbar
+        v-model="snackbar"
+      >
+        {{ snackbarText }}
+      </v-snackbar>
     </v-container>
-    <v-snackbar
-      v-model="snackbar"
-    >
-      {{ snackbarText }}
-    </v-snackbar>
-  </Layout>
+  </div>
 </template>
 
 <page-query>
@@ -97,6 +99,7 @@
 
 <script>
 export default {
+  name: 'Contact',
   data: () => ({
     valid: true,
     nameRules: [

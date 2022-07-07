@@ -1,25 +1,24 @@
 <template>
-  <v-parallax dark :src="this.$static.image.edges[0].node.thumbnail">
-    <v-row align="center" justify="center">
-      <v-col/>
-      <v-col>
-        <h1 class="display-2 font-weight-thin mb-4 text-center">{{heroData.hero.heroTitle}}</h1>
-        <br />
-        <h4 class="subheading text-center">{{heroData.hero.heroSubtitle}}</h4>
-      </v-col>
-      <v-col/>
-    </v-row>
-  </v-parallax>
+  <div class="hero">
+    <v-parallax height="600" :src="this.$static.heroData.edges[0].node.thumbnail">
+      <v-row align="center" justify="center">
+        <div class="light-text-bg px-4">
+          <h1 class="display-2 font-weight-thin text-center">{{this.$static.heroData.edges[0].node.title}}</h1>
+          <h4 class="subheading text-center">{{this.$static.heroData.edges[0].node.subtitle}}</h4>
+        </div>
+      </v-row>
+    </v-parallax>
+  </div>
 </template>
 
 <static-query>
   query {
-    image: allPageContent (filter: { fileInfo: {name : { eq: "home" }}}){
+    heroData: allPageContent (filter: { fileInfo: {name : { eq: "hero_data" }}}){
       edges {
         node {
-          id
-          content
           thumbnail
+          title
+          subtitle
         }
       }
     }
@@ -27,12 +26,17 @@
 </static-query>
 
 <script>
-import heroData from "~/data/hero.yml";
 export default {
-  data() {
-    return {
-      heroData
-    };
+  name: 'Hero',
+  created() {
+    console.log(this.$static)
+
   }
-};
+}
 </script>
+
+<style lang="scss" scope>
+.hero {
+  z-index: 9999;
+}
+</style>

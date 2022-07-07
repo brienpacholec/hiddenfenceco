@@ -1,7 +1,9 @@
 <template>
-  <Layout>
-    <span v-html="this.$page.body.edges[0].node.content"></span>
-  </Layout>
+  <div class="index">
+    <v-container class="d-flex flex-wrap justify-center">
+      <span v-html="this.$page.body.edges[0].node.content"></span>
+    </v-container>
+  </div>
 </template>
 
 <page-query>
@@ -19,6 +21,11 @@
 </page-query>
 
 <script>
+
+export default {
+  name: 'Index'
+}
+
 </script>
 
 <style></style>

@@ -51,5 +51,11 @@ collections:
         fields: 
           - { label: "Featured Image", name: "thumbnail", widget: "image"}
           - {label: "Body", name: "body", widget: "markdown"}
-
+      - label: "Hero Data"
+        name: "hero_data"
+        file: "page_content/hero_data.md"
+        fields: 
+          - { label: "Featured Image", name: "thumbnail", widget: "image"}
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
 

@@ -1,11 +1,11 @@
 <template>
-  <Layout>
-    <div class="hfc-services">
-    <v-container>
-      <span v-html="this.$page.body.edges[0].node.content" class="html-content"></span>
+  <div class="services">
+    <v-container fill-height class="d-flex">
+      <v-container>
+        <span v-html="this.$page.body.edges[0].node.content" class="html-content"></span>
+      </v-container>
     </v-container>
-    </div>
-  </Layout>
+  </div>
 </template>
 
 <page-query>
@@ -23,11 +23,12 @@
 
 <script>
 export default {
+  name: 'Services',
 }
 </script>
 
 <style lang="scss">
-.hfc-services {
+.services {
 
   .html-content {
     h1 {
@@ -42,6 +43,6 @@ export default {
       }
     }
   }
-  
+
 }
 </style>

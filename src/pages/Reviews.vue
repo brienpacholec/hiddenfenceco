@@ -1,10 +1,10 @@
 <template>
-  <Layout>
-    <v-container>
+  <div class="reviews">
+    <v-container fill-height class="d-flex">
       <h1>Reviews</h1>
       <span v-html="this.$page.body.edges[0].node.content"></span>
     </v-container>
-  </Layout>
+  </div>
 </template>
 
 <page-query>
@@ -24,3 +24,9 @@
 export default {
 }
 </script>
+
+<style lang="scss" scoped>
+.reviews {
+  height: 100vh;
+}
+</style>
