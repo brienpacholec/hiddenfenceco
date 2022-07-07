@@ -2,7 +2,6 @@
   <div class="navbar">
     <nav class="raleway">
       <v-toolbar
-        color="primary"
         :elevate-on-scroll="true"
         :hide-on-scroll="false"
         dark

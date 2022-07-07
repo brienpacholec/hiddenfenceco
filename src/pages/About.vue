@@ -39,38 +39,6 @@
           </v-col>
         </v-row>
       </v-container>
-
-      <!-- <v-container>
-      <v-row
-        no-gutters
-        justify="space-around"
-      >
-        <v-col
-          sm="4"
-        >
-          <v-card
-            class="pa-2"
-            color="primary"
-          >
-            <g-image src="~/images/owners.webp"/>
-            <h2>Steve & Amy Bronson</h2>
-            <h3>Owners</h3>
-          </v-card>
-        </v-col>
-        <v-col
-          sm="4"
-        >
-          <v-card
-            class="pa-2"
-            color="primary"
-          >
-            <g-image src="~/images/manager.webp"/>
-            <h2>Ryan Bronson</h2>
-            <h3>Manager</h3>
-          </v-card>
-        </v-col>
-      </v-row>
-    </v-container> -->
     </v-container>
   </div>
 </template>

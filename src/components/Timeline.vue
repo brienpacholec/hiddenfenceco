@@ -1,21 +1,42 @@
 <template>
-  <v-timeline :dense="$vuetify.breakpoint.smAndDown">
-    <v-timeline-item :icon="'fa-star'" v-for="item in timeline" :key="item.event" >
-      <span>{{item.event}}</span>
-      <v-card class="elevation-2">
-        <v-card-title class="headline primary white--text">{{item.caption}}</v-card-title>
-        <v-card-text class="p-4 m-4">
-          {{item.desc}}
-        </v-card-text>
-      </v-card>
-    </v-timeline-item>
-  </v-timeline>
+  <v-container>
+    <v-timeline
+      :reverse="reverse"
+      dense
+    >
+      <v-timeline-item
+        v-for="(step, index) in this.steps"
+        :key="index"
+      >
+        <template v-slot:icon>
+          <v-avatar>
+            <img :src="step.src">
+          </v-avatar>
+        </template>
+        <!-- <template v-slot:opposite>
+          <span>{{step.title}}</span>
+        </template> -->
+        <v-card class="elevation-2">
+          <v-card-title class="text-h5">
+            {{step.title}}
+          </v-card-title>
+          <v-card-text>
+            {{step.description}}
+          </v-card-text>
+        </v-card>
+      </v-timeline-item>
+    </v-timeline>
+  </v-container>
 </template>
 
 <script>
 export default {
+  name: 'Timeline',
   props: {
-    timeline: Array
+    steps: {
+      type: Array,
+      required: true
+    },
   }
 }
 </script>

@@ -4,9 +4,8 @@
       <v-card
         flat
         tile
-        class="white--text text-center align-self-md-stretch"
+        class="white--text text-center align-self-md-stretch bottom-color"
         width="100%"
-        color="secondary"
       >
         <v-card-text>
           <v-btn v-for="icon in icons" :key="icon" class="mx-4 white--text" icon>
@@ -46,6 +45,6 @@ export default {
 
 <style lang="scss" scope>
 .bottom {
-  z-index: 9999;
+  z-index: 100;
 }
 </style>

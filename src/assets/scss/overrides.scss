@@ -1,0 +1,17 @@
+@import "~/assets/scss/variables.scss";
+
+.navigation-drawer {
+    position: fixed !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    height: 100vh !important;
+    z-index: 99999 !important;
+}
+
+header {
+    background: linear-gradient(darken($primary, 10%), darken($secondary, 10%)) !important;
+}
+
+.bottom-color {
+    background: linear-gradient(darken($secondary, 10%), $contrast) !important;
+}

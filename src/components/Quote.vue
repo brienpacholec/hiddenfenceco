@@ -2,7 +2,6 @@
   <div class="quote">
     <v-btn
       elevation="2"
-      large
       rounded
       color="complement"
       class="white--text"
@@ -25,6 +24,6 @@ export default {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 100;
+    z-index: 999;
 }
 </style>

@@ -1,7 +1,7 @@
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import '@mdi/font/css/materialdesignicons.css'
-import '~/assets/styles/app.scss'
+import '~/assets/scss/app.scss'
 import theme from '~/constants/theme'
 
 export default function(Vue, { appOptions, head }) {

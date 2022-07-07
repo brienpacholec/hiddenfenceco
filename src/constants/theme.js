@@ -8,10 +8,11 @@ const theme = {
     },
     themes: {
       light: {
-        primary: '#84a98c',
-        complement: '#679370',
-        secondary: '#3f5444',
-        accent: '#4E8098',
+        primary: '#ABD699',
+        secondary: '#75C9B7',
+        complement: '#50BBA4',
+        accent: '#C7DDCC',
+        contrast: '#16123F',
       },
     }
   }
