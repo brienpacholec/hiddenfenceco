@@ -1,7 +1,7 @@
 ---
 thumbnail: /uploads/3.webp
 ---
-# Fence Offerings
+# Fence Offering
 
 ![Product Listing](/uploads/fences.webp)
 
