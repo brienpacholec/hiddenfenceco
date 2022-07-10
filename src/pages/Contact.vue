@@ -60,12 +60,13 @@
             v-model="formData.message"
             name="message"
             label="Message"
+            :rules="messageRules"
             rows="1"
             row-height="15"
             required
           ></v-textarea>
           <v-btn
-            color="success"
+            color="primary"
             type="submit"
             required
             :disabled="!valid"
@@ -115,6 +116,10 @@ export default {
       v => !!v || 'Subject is required',
       v => (v && v.length <= 30) || 'Name must be less than 30 characters',
       v => (v && v.length > 2) || 'Subject must be greater than 2 characters'
+    ],
+    messageRules: [
+      v => !!v || 'A message is required',
+      v => (v && v.length > 2) || 'Message must be greater than 10 characters'
     ],
     formData: {},
     snackbar: false,

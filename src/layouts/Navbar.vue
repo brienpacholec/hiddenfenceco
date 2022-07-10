@@ -6,7 +6,7 @@
         :hide-on-scroll="false"
         dark
         class="d-flex justify-center align-center overflow-hidden"
-        :height="100"
+        :height="75"
       >
         <v-app-bar-nav-icon
           class="d-sm-none d-flex"

@@ -1,8 +1,8 @@
 <template>
   <div class="about">
     <v-container fill-height class="d-flex">
-      <v-container class="text-center">
-        <span v-html="this.$page.body.edges[0].node.content" class="html"></span>
+      <v-container>
+        <span v-html="this.$page.body.edges[0].node.content" class="html-content"></span>
       </v-container>
 
       <v-container fluid>
@@ -91,12 +91,6 @@ export default {
 
 <style lang="scss">
 .about {
-    img {
-      width: 100%;
-      max-width: 700px;
-      height: auto;
-    }
-
   .v-card {
     img {
       width: 100%;

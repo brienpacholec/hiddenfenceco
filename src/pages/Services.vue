@@ -30,19 +30,5 @@ export default {
 <style lang="scss">
 .services {
 
-  .html-content {
-    h1 {
-      text-align: -webkit-center;
-    }
-    p {
-      text-align: -webkit-center;
-        img {
-          width: 100%;
-          max-width: 700px !important;
-          height: auto;
-      }
-    }
-  }
-
 }
 </style>

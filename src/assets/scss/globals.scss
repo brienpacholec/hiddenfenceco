@@ -9,3 +9,17 @@ p, .raleway {
     background-color: rgba(0,0,0,0.4);
     border-radius: 0.5rem;
 }
+
+.html-content {
+    
+    img {
+        width: 100%;
+        max-width: 700px !important;
+        height: auto;
+        // border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    }
+    p:has(img) {
+        text-align: -webkit-center !important;
+    }
+}
