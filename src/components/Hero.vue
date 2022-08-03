@@ -33,7 +33,7 @@ export default {
 
 <style lang="scss" scope>
 .hero {
-  z-index: 9999;
+  z-index: 999;
 
   h1, p {
     color: white !important;
