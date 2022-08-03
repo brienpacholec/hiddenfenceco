@@ -13,7 +13,7 @@
             <span class="px-xs-5">{{ $page.article.author }}</span
             ><br />
             <span class="px-xs-5"
-              >Date: {{ $page.article.date }} | Time:
+            >Date: {{ $page.article.date }} | Time:
               {{ $page.article.timeToRead }} min to read</span
             >
             <div class="pa-xs-5 body-1">
@@ -43,13 +43,13 @@ query Article ($path: String!) {
 </page-query>
 
 <script>
-import ArticleContent from "@/components/ArticleContent";
+import ArticleContent from '@/components/ArticleContent'
 
 export default {
   components: {
     ArticleContent
   }
-};
+}
 </script>
 
 <style scoped></style>

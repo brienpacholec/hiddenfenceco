@@ -100,7 +100,7 @@ export default {
   left:0;
   right: 0;
   width: 100%;
-  z-index: 9999;
+  z-index: 999;
 
   .shrink {
     height: 40px;
