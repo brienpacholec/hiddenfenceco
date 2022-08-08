@@ -9,9 +9,9 @@
 }
 
 header {
-    background: linear-gradient(darken($primary, 10%), darken($secondary, 10%)) !important;
+    background: linear-gradient(darken($primary, 5%), darken($secondary, 20%)) !important;
 }
 
 .bottom-color {
-    background: linear-gradient(darken($secondary, 10%), $contrast) !important;
+    background: linear-gradient(darken($secondary, 20%), lighten($primary, 5%)) !important;
 }

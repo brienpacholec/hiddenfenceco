@@ -5,13 +5,16 @@
         :elevate-on-scroll="true"
         :hide-on-scroll="false"
         dark
-        class="d-flex justify-center align-center overflow-hidden"
+        class="d-flex justify-start justify-sm-center align-center overflow-hidden"
         :height="75"
       >
         <v-app-bar-nav-icon
           class="d-sm-none d-flex"
+          style="margin-left: 0px"
           @click="toggle"
         ></v-app-bar-nav-icon>
+
+        <span class="d-sm-none d-flex">Hidden Fence Company</span>
 
         <v-toolbar-items class="d-none d-sm-flex shrink">
           <v-btn
@@ -29,14 +32,23 @@
         absolute
         temporary
         v-model="collapse"
+        :width="'100%'"
         :mini-variant.sync="mini"
         class="d-sm-none d-flex navigation-drawer"
       >
-        <v-list-item>
-          <v-list-item-avatar>
-            <g-image src="~/favicon.png"></g-image>
-          </v-list-item-avatar>
-        </v-list-item>
+        <div
+          class="d-flex justify-space-between px-2 py-4"
+        >
+          <span>Hidden Fence Company</span>
+          <v-btn
+            icon
+            @click="toggle"
+            :height="24"
+            :width="24"
+          >
+            <v-icon>mdi-close</v-icon>
+          </v-btn>
+        </div>
 
         <v-divider></v-divider>
 
@@ -56,6 +68,7 @@
             </v-list-item-content>
           </v-list-item>
         </v-list>
+
       </v-navigation-drawer>
     </nav>
   </div>
