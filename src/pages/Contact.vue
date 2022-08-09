@@ -1,12 +1,10 @@
 <template>
   <div class="contact">
     <v-container fill-height class="d-flex">
-      <div>
+      <div class="fill-width">
         <h1>Contact Us</h1>
 
         <span v-html="this.$page.body.edges[0].node.content"></span>
-
-        <p>Send a message, and we'll reply as soon as possible!</p>
 
         <v-form
           ref="form"
@@ -168,3 +166,11 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+.contact {
+  .fill-width {
+    width: 100vw !important;
+  }
+}
+</style>
