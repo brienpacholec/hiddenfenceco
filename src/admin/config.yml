@@ -31,25 +31,21 @@ collections:
         name: "about"
         file: "page_content/about.md"
         fields: 
-          - { label: "Featured Image", name: "thumbnail", widget: "image"}
           - {label: "Body", name: "body", widget: "markdown"}
       - label: "Services Page"
         name: "services"
         file: "page_content/services.md"
         fields: 
-          - { label: "Featured Image", name: "thumbnail", widget: "image"}
           - {label: "Body", name: "body", widget: "markdown"}
       - label: "Reviews Page"
         name: "reviews"
         file: "page_content/reviews.md"
         fields: 
-          - { label: "Featured Image", name: "thumbnail", widget: "image"}
           - {label: "Body", name: "body", widget: "markdown"}
       - label: "Contact Page"
         name: "contact"
         file: "page_content/contact.md"
         fields: 
-          - { label: "Featured Image", name: "thumbnail", widget: "image"}
           - {label: "Body", name: "body", widget: "markdown"}
       - label: "Hero Data"
         name: "hero_data"
