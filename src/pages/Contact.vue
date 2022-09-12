@@ -59,8 +59,10 @@
             name="message"
             label="Message"
             :rules="messageRules"
-            rows="1"
+            rows="3"
             row-height="15"
+            clearable
+            counter
             required
           ></v-textarea>
           <v-btn
@@ -169,8 +171,6 @@ export default {
 
 <style lang="scss">
 .contact {
-  .fill-width {
-    width: 100vw !important;
-  }
+
 }
 </style>
